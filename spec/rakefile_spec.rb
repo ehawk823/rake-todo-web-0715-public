@@ -52,7 +52,7 @@ describe 'Rakefile' do
       # Now we trigger our task
       task.invoke()
     end
-  end  
+  end
 
   describe 'overdue_todos task' do
     let(:task){Rake::Task[:overdue_todos]}
@@ -121,7 +121,7 @@ describe 'Rakefile' do
 
       # Or this.
       rake_t = `rake -T` # This executes a system command and captures output.
-      expect(rake_t).to match(/rake console\s+# Loads an interactive console/)      
+      expect(rake_t).to match(/rake console\s+# Loads an interactive console/)
     end
   end
 
